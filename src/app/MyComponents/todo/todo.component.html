@@ -1,1 +1,42 @@
-<p> Todo Works!!</p>
+<!-- <ul *ngFor="let todo of todos">
+  <li>
+    {{todo.serialNo}} 
+    {{todo.title}} 
+    {{todo.description}} 
+    {{todo.active}}
+  </li>
+</ul> -->
+
+<!-- Ordered List is actually more pretty hate to say -->
+
+<!-- <ol *ngFor="let orlist of todos">
+  <li>
+    {{orlist.serialNo}}
+  </li>
+  <li>
+    {{orlist.title}}
+  </li>
+  <li>
+    {{orlist.description}}
+  </li>
+  <li>
+    {{orlist.active}}
+  </li>
+
+</ol> -->
+
+
+<!-- <div *ngFor="let todo of todos">
+  {{todo.serialNo}} 
+  {{todo.title}} 
+  {{todo.description}} 
+  {{todo.active}}
+</div> -->
+
+
+<div *ngFor="let todo of todos">
+
+<app-todo-item [todo]= "todo"> </app-todo-item>
+
+</div>
+
